@@ -3,11 +3,13 @@ import random
 
 f = open('foundations.txt', encoding='utf-8')
 
-print("Level: Foundations.")
+print("Level: Foundations.\n")
+print("Keep the answers in lower case. Pressing enter on an empty answer will end the program, the same will happen if you type 'EXIT' in place of an answer.")
+
 words = f.readlines()
 random.shuffle(words)
 
-print("Words:", len(words))
+print("Words:", len(words),'\n')
 
 score = 0
 total = 0
